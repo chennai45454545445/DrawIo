@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="fSQVBAV8dNujFMp2Yc2T">
+    <mxGraphModel dx="1212" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="APPLICATION" vertex="1">
+          <mxGeometry height="140" width="220" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=none;" value="DATABASE" vertex="1">
+          <mxGeometry height="160" width="130" x="660" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-3" edge="1" parent="1" source="yTDmmFJ-s7ii1vxbes8Q-1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="500" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-6" parent="1" style="image;html=1;image=img/lib/clip_art/general/Full_Folder_128x128.png" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="560" y="572.5" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DEVELOPER END" vertex="1">
+          <mxGeometry height="145" width="170" x="650" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="CSV FILE" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.577;entryY=0.938;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="734" y="540" as="sourcePoint" />
+            <mxPoint x="734.41" y="330.04" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Read the CSV File ( BufferReader )&lt;/div&gt;2. Upload the CSV File&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Validate the file&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;4. Get the&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;acknowledgement to verify&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;5. After verity we commit to Database&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="480" x="50" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="UPLOAD&lt;div&gt;CSV&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="720" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="USER" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-16" edge="1" parent="1" source="yTDmmFJ-s7ii1vxbes8Q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="yTDmmFJ-s7ii1vxbes8Q-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="WAL" vertex="1">
+          <mxGeometry height="110" width="100" x="500" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-18" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.311;entryY=-0.016;entryDx=0;entryDy=0;entryPerimeter=0;" target="yTDmmFJ-s7ii1vxbes8Q-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="195" />
+              <mxPoint x="610" y="120" />
+            </Array>
+            <mxPoint x="540" y="195" as="sourcePoint" />
+            <mxPoint x="590" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yTDmmFJ-s7ii1vxbes8Q-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="COMMIT" vertex="1">
+          <mxGeometry height="30" width="60" x="590" y="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
