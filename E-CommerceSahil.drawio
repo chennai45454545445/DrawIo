@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="fsEWBUOAfBD_SUXGswTi">
+    <mxGraphModel dx="1030" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="USER" vertex="1">
+          <mxGeometry height="120" width="170" x="40" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-3" parent="ii-oiJce6XaH4Wjzp-YE-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SignUp" vertex="1">
+          <mxGeometry height="30" width="130" x="-6" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-4" parent="ii-oiJce6XaH4Wjzp-YE-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="LogIn" vertex="1">
+          <mxGeometry height="30" width="130" x="-6" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-6" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.smartphone;" value="" vertex="1">
+          <mxGeometry height="185" width="144" x="640" y="137.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-7" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="140" width="124" x="350" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-8" edge="1" parent="1" source="ii-oiJce6XaH4Wjzp-YE-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="ii-oiJce6XaH4Wjzp-YE-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.008;entryY=0.495;entryDx=0;entryDy=0;entryPerimeter=0;" target="ii-oiJce6XaH4Wjzp-YE-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="474" y="229.5" as="sourcePoint" />
+            <mxPoint x="614" y="229.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ii-oiJce6XaH4Wjzp-YE-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="E-Commerce UI" vertex="1">
+          <mxGeometry height="30" width="150" x="640" y="330" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
