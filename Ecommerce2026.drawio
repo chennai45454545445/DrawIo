@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
+  <diagram id="ecommerce-jdbc" name="E-Commerce JDBC System">
+    <mxGraphModel dx="1471" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="customers" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;CUSTOMERS&lt;/b&gt;&lt;br&gt;&lt;hr&gt;customer_id (PK)&lt;br&gt;name&lt;br&gt;email&lt;br&gt;password&lt;br&gt;address" vertex="1">
+          <mxGeometry height="180" width="220" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="products" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;PRODUCTS&lt;/b&gt;&lt;br&gt;&lt;hr&gt;product_id (PK)&lt;br&gt;name&lt;br&gt;description&lt;br&gt;price&lt;br&gt;stock_quantity" vertex="1">
+          <mxGeometry height="180" width="220" x="480" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="orders" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;ORDERS&lt;/b&gt;&lt;br&gt;&lt;hr&gt;order_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;order_date&lt;br&gt;total_amount&lt;br&gt;status" vertex="1">
+          <mxGeometry height="180" width="220" x="80" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="order_items" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;ORDER_ITEMS&lt;/b&gt;&lt;br&gt;&lt;hr&gt;order_item_id (PK)&lt;br&gt;order_id (FK)&lt;br&gt;product_id (FK)&lt;br&gt;quantity&lt;br&gt;price" vertex="1">
+          <mxGeometry height="180" width="220" x="480" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="cart" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;CART&lt;/b&gt;&lt;br&gt;&lt;hr&gt;cart_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;product_id (FK)&lt;br&gt;quantity" vertex="1">
+          <mxGeometry height="180" width="220" x="900" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="service" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;ORDER SERVICE / JDBC&lt;/b&gt;&lt;br&gt;&lt;hr&gt;PreparedStatement&lt;br&gt;Transaction Management&lt;br&gt;Batch Processing&lt;br&gt;commit() / rollback()" vertex="1">
+          <mxGeometry height="180" width="250" x="900" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="flow" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=left;spacingLeft=10;spacingTop=8;" value="&lt;b&gt;ORDER PLACEMENT FLOW&lt;/b&gt;&lt;br&gt;1. Validate stock&lt;br&gt;2. Begin Transaction&lt;br&gt;3. Create Order&lt;br&gt;4. Batch Insert Order Items&lt;br&gt;5. Update Inventory&lt;br&gt;6. Commit&lt;br&gt;7. Rollback if failure" vertex="1">
+          <mxGeometry height="250" width="260" x="1250" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="customers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;" target="orders" value="places">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;" target="order_items" value="contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;" target="order_items" value="references">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="customers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;" target="cart" value="owns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;startArrow=ERmany;" target="cart" value="contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;" target="orders" value="JDBC Access">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;" target="products" value="Inventory Update">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="service" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;" target="flow" value="Transaction Flow">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DIWT0QlqqSEohzZ4me0G" name="Page-2">
+    <mxGraphModel dx="1030" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
