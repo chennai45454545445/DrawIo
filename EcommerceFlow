@@ -1,0 +1,233 @@
+<mxfile host="app.diagrams.net" modified="2026-07-17T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.17">
+  <diagram id="complete-ecommerce-flow" name="Complete E-Commerce System Flow">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- TITLE -->
+        <mxCell id="title" value="&lt;b&gt;MINI E-COMMERCE ORDER SYSTEM - COMPLETE SYSTEM FLOW&lt;/b&gt;"
+          style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;fontStyle=1;align=center;"
+          vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="800" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- USER -->
+        <mxCell id="user" value="&lt;b&gt;USER&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Customer"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;"
+          vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="180" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- SIGNUP -->
+        <mxCell id="signup" value="&lt;b&gt;SIGN UP&lt;/b&gt;&lt;br&gt;Enter Name&lt;br&gt;Email&lt;br&gt;Password"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="300" y="90" width="210" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- LOGIN -->
+        <mxCell id="login" value="&lt;b&gt;LOGIN&lt;/b&gt;&lt;br&gt;Enter Email &amp; Password&lt;br&gt;Validate Credentials"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="210" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- AUTH -->
+        <mxCell id="auth" value="&lt;b&gt;AUTHENTICATION SERVICE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;PreparedStatement&lt;br&gt;Check User Credentials&lt;br&gt;Create Customer Account"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="600" y="180" width="260" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- CUSTOMER DB -->
+        <mxCell id="customerdb" value="&lt;b&gt;CUSTOMERS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;customer_id (PK)&lt;br&gt;name&lt;br&gt;email&lt;br&gt;password"
+          style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="950" y="180" width="230" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- LOGIN SUCCESS -->
+        <mxCell id="success" value="&lt;b&gt;LOGIN SUCCESSFUL&lt;/b&gt;&lt;br&gt;User enters E-Commerce System"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="1250" y="210" width="250" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCT PAGE -->
+        <mxCell id="productscreen" value="&lt;b&gt;PRODUCT LISTING&lt;/b&gt;&lt;br&gt;&lt;hr&gt;View Products&lt;br&gt;Product Details&lt;br&gt;Price&lt;br&gt;Available Stock"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="1550" y="180" width="250" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCT DB -->
+        <mxCell id="productdb" value="&lt;b&gt;PRODUCTS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;product_id (PK)&lt;br&gt;name&lt;br&gt;description&lt;br&gt;price&lt;br&gt;stock_quantity"
+          style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="1550" y="430" width="250" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- CART -->
+        <mxCell id="cart" value="&lt;b&gt;SHOPPING CART&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Add Product&lt;br&gt;Remove Product&lt;br&gt;Update Quantity&lt;br&gt;View Cart"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="1250" y="500" width="250" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- CART DB -->
+        <mxCell id="cartdb" value="&lt;b&gt;CART TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;cart_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;product_id (FK)&lt;br&gt;quantity"
+          style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="950" y="500" width="230" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- CHECKOUT -->
+        <mxCell id="checkout" value="&lt;b&gt;CHECKOUT&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Confirm Cart Items&lt;br&gt;Calculate Total Amount&lt;br&gt;Place Order"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="600" y="500" width="260" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- STOCK VALIDATION -->
+        <mxCell id="stock" value="&lt;b&gt;STOCK VALIDATION&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Check Available Quantity&lt;br&gt;If Stock Available → Continue&lt;br&gt;If Insufficient → Reject Order"
+          style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="220" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- TRANSACTION -->
+        <mxCell id="transaction" value="&lt;b&gt;JDBC TRANSACTION&lt;/b&gt;&lt;br&gt;&lt;hr&gt;setAutoCommit(false)&lt;br&gt;Begin Transaction&lt;br&gt;PreparedStatement&lt;br&gt;Batch Processing"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="50" y="500" width="200" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDER DB -->
+        <mxCell id="orderdb" value="&lt;b&gt;ORDERS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;order_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;order_date&lt;br&gt;total_amount&lt;br&gt;status"
+          style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="50" y="800" width="220" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDER ITEMS DB -->
+        <mxCell id="itemsdb" value="&lt;b&gt;ORDER_ITEMS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;order_item_id (PK)&lt;br&gt;order_id (FK)&lt;br&gt;product_id (FK)&lt;br&gt;quantity&lt;br&gt;price"
+          style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="350" y="800" width="240" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- INVENTORY UPDATE -->
+        <mxCell id="inventory" value="&lt;b&gt;INVENTORY UPDATE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Reduce Product Stock&lt;br&gt;UPDATE products&lt;br&gt;SET stock_quantity = stock_quantity - quantity"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="680" y="800" width="270" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- COMMIT -->
+        <mxCell id="commit" value="&lt;b&gt;COMMIT&lt;/b&gt;&lt;br&gt;All Operations Successful&lt;br&gt;Order Confirmed"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;"
+          vertex="1" parent="1">
+          <mxGeometry x="1050" y="800" width="230" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ROLLBACK -->
+        <mxCell id="rollback" value="&lt;b&gt;ROLLBACK&lt;/b&gt;&lt;br&gt;If Any Step Fails&lt;br&gt;Undo All Changes&lt;br&gt;Order Cancelled"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;"
+          vertex="1" parent="1">
+          <mxGeometry x="1350" y="800" width="230" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDER HISTORY -->
+        <mxCell id="history" value="&lt;b&gt;ORDER HISTORY&lt;/b&gt;&lt;br&gt;&lt;hr&gt;View Previous Orders&lt;br&gt;Order Details&lt;br&gt;Purchased Items"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;"
+          vertex="1" parent="1">
+          <mxGeometry x="1050" y="1020" width="260" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- EDGES -->
+
+        <mxCell id="a1" value="New User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="user" target="signup">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a2" value="Existing User" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="user" target="login">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a3" value="Register" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="signup" target="auth">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a4" value="Login Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="login" target="auth">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a5" value="INSERT / SELECT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="auth" target="customerdb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a6" value="Valid Credentials" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="auth" target="success">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a7" value="Browse Products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="success" target="productscreen">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a8" value="SELECT Products" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="productscreen" target="productdb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a9" value="Add to Cart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="productscreen" target="cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a10" value="INSERT / UPDATE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="cart" target="cartdb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a11" value="Proceed to Checkout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="cart" target="checkout">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a12" value="Validate Stock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="checkout" target="stock">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a13" value="Stock Available" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="stock" target="transaction">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a14" value="Insufficient Stock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="stock" target="cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a15" value="Create Order" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="transaction" target="orderdb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a16" value="Batch Insert Items" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="transaction" target="itemsdb">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a17" value="Update Stock" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="transaction" target="inventory">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a18" value="All Successful" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="inventory" target="commit">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a19" value="Any Error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="transaction" target="rollback">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a20" value="View Orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="commit" target="history">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
