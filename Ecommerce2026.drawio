@@ -52,11 +52,131 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="DIWT0QlqqSEohzZ4me0G" name="Page-2">
-    <mxGraphModel dx="1030" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="DIWT0QlqqSEohzZ4me0G" name="EcommerceFlow">
+    <mxGraphModel dx="2060" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;fontStyle=1;align=center;" value="&lt;b&gt;MINI E-COMMERCE ORDER SYSTEM - COMPLETE SYSTEM FLOW&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="800" x="885" y="363.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;" value="&lt;b&gt;USER&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Customer" vertex="1">
+          <mxGeometry height="90" width="180" x="435" y="463.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="&lt;b&gt;SIGN UP&lt;/b&gt;&lt;br&gt;Enter Name&lt;br&gt;Email&lt;br&gt;Password" vertex="1">
+          <mxGeometry height="130" width="210" x="685" y="433.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="&lt;b&gt;LOGIN&lt;/b&gt;&lt;br&gt;Enter Email &amp; Password&lt;br&gt;Validate Credentials" vertex="1">
+          <mxGeometry height="130" width="210" x="685" y="643.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="&lt;b&gt;AUTHENTICATION SERVICE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;PreparedStatement&lt;br&gt;Check User Credentials&lt;br&gt;Create Customer Account" vertex="1">
+          <mxGeometry height="170" width="260" x="985" y="523.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-6" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" value="&lt;b&gt;CUSTOMERS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;customer_id (PK)&lt;br&gt;name&lt;br&gt;email&lt;br&gt;password" vertex="1">
+          <mxGeometry height="170" width="230" x="1335" y="523.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="&lt;b&gt;LOGIN SUCCESSFUL&lt;/b&gt;&lt;br&gt;User enters E-Commerce System" vertex="1">
+          <mxGeometry height="110" width="250" x="1635" y="553.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="&lt;b&gt;PRODUCT LISTING&lt;/b&gt;&lt;br&gt;&lt;hr&gt;View Products&lt;br&gt;Product Details&lt;br&gt;Price&lt;br&gt;Available Stock" vertex="1">
+          <mxGeometry height="170" width="250" x="1935" y="523.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-9" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" value="&lt;b&gt;PRODUCTS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;product_id (PK)&lt;br&gt;name&lt;br&gt;description&lt;br&gt;price&lt;br&gt;stock_quantity" vertex="1">
+          <mxGeometry height="180" width="250" x="1935" y="773.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" value="&lt;b&gt;SHOPPING CART&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Add Product&lt;br&gt;Remove Product&lt;br&gt;Update Quantity&lt;br&gt;View Cart" vertex="1">
+          <mxGeometry height="170" width="250" x="1635" y="843.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-11" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" value="&lt;b&gt;CART TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;cart_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;product_id (FK)&lt;br&gt;quantity" vertex="1">
+          <mxGeometry height="170" width="230" x="1335" y="843.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" value="&lt;b&gt;CHECKOUT&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Confirm Cart Items&lt;br&gt;Calculate Total Amount&lt;br&gt;Place Order" vertex="1">
+          <mxGeometry height="170" width="260" x="985" y="843.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" value="&lt;b&gt;STOCK VALIDATION&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Check Available Quantity&lt;br&gt;If Stock Available → Continue&lt;br&gt;If Insufficient → Reject Order" vertex="1">
+          <mxGeometry height="170" width="220" x="685" y="843.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" value="&lt;b&gt;JDBC TRANSACTION&lt;/b&gt;&lt;br&gt;&lt;hr&gt;setAutoCommit(false)&lt;br&gt;Begin Transaction&lt;br&gt;PreparedStatement&lt;br&gt;Batch Processing" vertex="1">
+          <mxGeometry height="170" width="200" x="435" y="843.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-15" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" value="&lt;b&gt;ORDERS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;order_id (PK)&lt;br&gt;customer_id (FK)&lt;br&gt;order_date&lt;br&gt;total_amount&lt;br&gt;status" vertex="1">
+          <mxGeometry height="180" width="220" x="435" y="1143.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-16" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;" value="&lt;b&gt;ORDER_ITEMS TABLE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;order_item_id (PK)&lt;br&gt;order_id (FK)&lt;br&gt;product_id (FK)&lt;br&gt;quantity&lt;br&gt;price" vertex="1">
+          <mxGeometry height="180" width="240" x="735" y="1143.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" value="&lt;b&gt;INVENTORY UPDATE&lt;/b&gt;&lt;br&gt;&lt;hr&gt;Reduce Product Stock&lt;br&gt;UPDATE products&lt;br&gt;SET stock_quantity = stock_quantity - quantity" vertex="1">
+          <mxGeometry height="180" width="270" x="1065" y="1143.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;" value="&lt;b&gt;COMMIT&lt;/b&gt;&lt;br&gt;All Operations Successful&lt;br&gt;Order Confirmed" vertex="1">
+          <mxGeometry height="140" width="230" x="1435" y="1143.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=15;" value="&lt;b&gt;ROLLBACK&lt;/b&gt;&lt;br&gt;If Any Step Fails&lt;br&gt;Undo All Changes&lt;br&gt;Order Cancelled" vertex="1">
+          <mxGeometry height="140" width="230" x="1735" y="1143.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" value="&lt;b&gt;ORDER HISTORY&lt;/b&gt;&lt;br&gt;&lt;hr&gt;View Previous Orders&lt;br&gt;Order Details&lt;br&gt;Purchased Items" vertex="1">
+          <mxGeometry height="150" width="260" x="1435" y="1363.4000244140625" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-21" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-3" value="New User">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-22" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-4" value="Existing User">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-23" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-5" value="Register">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-24" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-5" value="Login Request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-25" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-6" value="INSERT / SELECT">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-26" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-7" value="Valid Credentials">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-27" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-8" value="Browse Products">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-28" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-9" value="SELECT Products">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-29" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-10" value="Add to Cart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-30" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-11" value="INSERT / UPDATE">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-31" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-12" value="Proceed to Checkout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-32" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-13" value="Validate Stock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-33" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-14" value="Stock Available">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-34" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-10" value="Insufficient Stock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-35" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-15" value="Create Order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-36" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-16" value="Batch Insert Items">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-37" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-17" value="Update Stock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-38" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-18" value="All Successful">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-39" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-19" value="Any Error">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK6ZH2WiHGsCPlLDsvM6-40" edge="1" parent="1" source="UK6ZH2WiHGsCPlLDsvM6-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="UK6ZH2WiHGsCPlLDsvM6-20" value="View Orders">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
